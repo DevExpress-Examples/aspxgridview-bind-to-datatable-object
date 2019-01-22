@@ -10,5 +10,6 @@
 <p>This example demonstrates how you can programmatically create a DataTable and then bind a grid control to it.</p>
 
 <br/>
+<p><strong>See Also:</strong><br /> <a href="https://github.com/DevExpress-Examples/aspxgridview-editing-an-in-memory-dataset-e257"> ASPxGridView - Editing an in-memory dataset</a>
 
 
