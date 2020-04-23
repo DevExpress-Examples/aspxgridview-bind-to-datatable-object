@@ -1,5 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Data
 Imports System.Configuration
 Imports System.Collections
@@ -9,23 +8,25 @@ Imports System.Web.UI
 Imports System.Web.UI.WebControls
 Imports System.Web.UI.WebControls.WebParts
 Imports System.Web.UI.HtmlControls
-Imports DevExpress.Web.ASPxGridView
+Imports DevExpress.Web
 
 Partial Public Class Grid_Bind_RunTimeBinding
 	Inherits System.Web.UI.Page
+
 	Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
-		If (Not IsPostBack) AndAlso (Not IsCallback) Then
+		If Not IsPostBack AndAlso Not IsCallback Then
 			'Create columns on the first load.
-			Dim id As New GridViewDataColumn()
-			id.FieldName = "id"
-			grid.Columns.Add(id)
+'INSTANT VB NOTE: The variable id was renamed since Visual Basic does not handle local variables named the same as class members well:
+			Dim id_Conflict As New GridViewDataColumn()
+			id_Conflict.FieldName = "id"
+			grid.Columns.Add(id_Conflict)
 			Dim data As New GridViewDataColumn()
 			data.FieldName = "data"
 			grid.Columns.Add(data)
 		End If
 
 		'Bind the grid only once
-		If (Not IsPostBack) Then
+		If Not IsPostBack Then
 			grid.DataBind()
 		End If
 	End Sub
