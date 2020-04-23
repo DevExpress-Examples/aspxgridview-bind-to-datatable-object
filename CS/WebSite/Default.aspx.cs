@@ -8,7 +8,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
-using DevExpress.Web.ASPxGridView;
+using DevExpress.Web;
 
 public partial class Grid_Bind_RunTimeBinding : System.Web.UI.Page {
     protected void Page_Load(object sender, EventArgs e) {
