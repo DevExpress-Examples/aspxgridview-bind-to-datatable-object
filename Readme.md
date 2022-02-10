@@ -4,20 +4,28 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 <!-- default file list -->
-*Files to look at*:
 
-* [Default.aspx](./CS/WebSite/Default.aspx) (VB: [Default.aspx](./VB/WebSite/Default.aspx))
-* [Default.aspx.cs](./CS/WebSite/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/WebSite/Default.aspx.vb))
-<!-- default file list end -->
-# Bind a grid to a DataTable via code
+# ASP.NET - Bind ASPxGridView to a DataTable at runtime
+
+This example handles the server-side [`DataBinding`](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.control.databinding) event to bind [ASPxGridView](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView) to a programmatically created [`DataTable`](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable).
+
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/e168/)**
 <!-- run online end -->
 
+## Files to Look At
 
-<p>This example demonstrates how you can programmatically create a DataTable and then bind a grid control to it.</p>
+* [Default.aspx](./CS/WebSite/Default.aspx) (VB: [Default.aspx](./VB/WebSite/Default.aspx))
+* [Default.aspx.cs](./CS/WebSite/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/WebSite/Default.aspx.vb))
 
-<br/>
-<p><strong>See Also:</strong><br /> <a href="https://github.com/DevExpress-Examples/aspxgridview-editing-an-in-memory-dataset-e257"> ASPxGridView - Editing an in-memory dataset</a>
+## Implementation Details
+
+The exmaple creates a [`DataTable`](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable) at runtime and stores this table in [session state](https://docs.microsoft.com/en-us/previous-versions/aspnet/ms178581(v=vs.100)). The [`DataBinding`](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.control.databinding) event handler assigns the created table to the grid [DataSource](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxDataWebControlBase.DataSource) property.
+
+Since [session state](https://docs.microsoft.com/en-us/previous-versions/aspnet/ms178581(v=vs.100)) contains the created table, the code uses this table in subsequent [`DataBinding`](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.control.databinding) event triggers and does not create the table again.
+
+## More Examples
+
+[ASPxGridView - Editing an in-memory dataset](https://github.com/DevExpress-Examples/aspxgridview-editing-an-in-memory-dataset-e257)
 
 
