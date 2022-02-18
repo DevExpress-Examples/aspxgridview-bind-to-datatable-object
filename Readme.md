@@ -24,6 +24,10 @@ In this example, [`ASPxGridView`](https://docs.devexpress.com/AspNet/DevExpress.
 
 The example stores the initially created [`DataTable`](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable) object in [session state](https://docs.microsoft.com/en-us/previous-versions/aspnet/ms178581(v=vs.100)). This technique allows you not to recreate this table for subsequent [`DataBinding`](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.control.databinding) event triggers.
 
+## Documentation
+
+[Bind Grid View to Data at Runtime](https://docs.devexpress.com/AspNet/403612/components/grid-view/concepts/bind-to-data/bind-to-data-at-runtime#bind-in-the-databinding-event-handler)
+
 ## More Examples
 
 [ASPxGridView - Editing an in-memory dataset](https://github.com/DevExpress-Examples/aspxgridview-editing-an-in-memory-dataset-e257)
