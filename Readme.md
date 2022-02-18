@@ -7,7 +7,7 @@
 
 # ASP.NET - Bind ASPxGridView to a DataTable at runtime
 
-This example handles the server-side [`DataBinding`](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.control.databinding) event to bind [ASPxGridView](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView) to a programmatically created [`DataTable`](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable).
+This example handles the server-side [`DataBinding`](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.control.databinding) event to bind [ASPxGridView](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView) to a programmatically created [`DataTable`](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable) object.
 
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/e168/)**
@@ -20,7 +20,7 @@ This example handles the server-side [`DataBinding`](https://docs.microsoft.com/
 
 ## Implementation Details
 
-In this example, [`ASPxGridView`](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView) uses the programmatically created [`DataTable`](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable) as its data source. The [`DataBinding`](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.control.databinding) event handler code assigns the created table to the grid's [DataSource](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxDataWebControlBase.DataSource) property. The example stores this [`DataTable`](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable) in the [session state](https://docs.microsoft.com/en-us/previous-versions/aspnet/ms178581(v=vs.100)) to use the initially created table for subsequent [`DataBinding`](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.control.databinding) event triggers.
+In this example, [`ASPxGridView`](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView) uses a programmatically created [`DataTable`](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable) object as its data source. To bind the grid to the [`DataTable`](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable) object, the [`DataBinding`](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.control.databinding) event handler assigns this table to the grid's [DataSource](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxDataWebControlBase.DataSource) property. The example stores the initially created [`DataTable`](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable) object in [session state](https://docs.microsoft.com/en-us/previous-versions/aspnet/ms178581(v=vs.100)) to use this table in subsequent [`DataBinding`](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.control.databinding) event triggers.
 
 ## More Examples
 
