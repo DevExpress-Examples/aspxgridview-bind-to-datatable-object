@@ -20,12 +20,8 @@ This example handles the server-side [`DataBinding`](https://docs.microsoft.com/
 
 ## Implementation Details
 
-The example creates a [`DataTable`](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable) at runtime and stores this table in [session state](https://docs.microsoft.com/en-us/previous-versions/aspnet/ms178581(v=vs.100)). The [`DataBinding`](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.control.databinding) event handler assigns the created table to the grid's [DataSource](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxDataWebControlBase.DataSource) property.
-
-Since [session state](https://docs.microsoft.com/en-us/previous-versions/aspnet/ms178581(v=vs.100)) contains the created table, the code uses this table in subsequent [`DataBinding`](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.control.databinding) event triggers and does not create the table again.
+In this example, [`ASPxGridView`](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView) uses the programmatically created [`DataTable`](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable) as its data source. The [`DataBinding`](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.control.databinding) event handler code assigns the created table to the grid's [DataSource](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxDataWebControlBase.DataSource) property. The example stores this [`DataTable`](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable) in the [session state](https://docs.microsoft.com/en-us/previous-versions/aspnet/ms178581(v=vs.100)) to use the initially created table for subsequent [`DataBinding`](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.control.databinding) event triggers.
 
 ## More Examples
 
 [ASPxGridView - Editing an in-memory dataset](https://github.com/DevExpress-Examples/aspxgridview-editing-an-in-memory-dataset-e257)
-
-
