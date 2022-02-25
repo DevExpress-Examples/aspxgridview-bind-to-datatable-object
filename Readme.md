@@ -20,9 +20,7 @@ This example handles the [`DataBinding`](https://docs.microsoft.com/en-us/dotnet
 
 ## Implementation Details
 
-In this example, [`ASPxGridView`](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView) uses a programmatically created [`DataTable`](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable) object as its data source. To bind the grid to the [`DataTable`](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable) object, the [`DataBinding`](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.control.databinding) event handler assigns this table to the grid's [`DataSource`](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxDataWebControlBase.DataSource) property. 
-
-The example stores the initially created [`DataTable`](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable) object in [session state](https://docs.microsoft.com/en-us/previous-versions/aspnet/ms178581(v=vs.100)). This technique allows you not to recreate the table for subsequent [`DataBinding`](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.control.databinding) event triggers.
+In this example, the grid's [`DataBinding`](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.control.databinding) event handler assigns a programmatically created [`DataTable`](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable) object to the grid's [`DataSource`](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxDataWebControlBase.DataSource) property. To persist the object between [`DataBinding`](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.control.databinding) event occurrences, the example stores it in [session state](https://docs.microsoft.com/en-us/previous-versions/aspnet/ms178581(v=vs.100)). This technique allows you not to recreate the object each time the [`DataBinding`](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.control.databinding) event fires.
 
 ## Documentation
 
