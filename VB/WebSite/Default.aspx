@@ -1,10 +1,10 @@
 <%@ Page Language="vb" AutoEventWireup="true" CodeFile="Default.aspx.vb" Inherits="Grid_Bind_RunTimeBinding" %>
 
-<%@ Register Assembly="DevExpress.Web.v19.2" Namespace="DevExpress.Web"
+<%@ Register Assembly="DevExpress.Web.v21.2" Namespace="DevExpress.Web"
 	TagPrefix="dxe" %>
-<%@ Register Assembly="DevExpress.Web.v19.2" Namespace="DevExpress.Web"
+<%@ Register Assembly="DevExpress.Web.v21.2" Namespace="DevExpress.Web"
 	TagPrefix="dxwgv" %>
-<%@ Register Assembly="DevExpress.Web.v19.2" Namespace="DevExpress.Web"
+<%@ Register Assembly="DevExpress.Web.v21.2" Namespace="DevExpress.Web"
 	TagPrefix="dxwp" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
