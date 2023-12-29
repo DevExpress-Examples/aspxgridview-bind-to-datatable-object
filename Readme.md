@@ -9,9 +9,6 @@
 
 This example handles the [DataBinding](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.control.databinding) event to bind [ASPxGridView](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView) to a programmatically created [DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable) object.
 
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128536896/)**
-<!-- run online end -->
 
 ## Implementation Details
 
